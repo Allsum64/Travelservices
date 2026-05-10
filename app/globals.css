@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  vertical-align: middle;
+}
+
+.glass-nav {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.tropical-gradient {
+  background: linear-gradient(135deg, rgba(0, 104, 118, 0.1) 0%, rgba(94, 230, 254, 0.05) 100%);
+}
+
+.hero-corporate-bg {
+  background: linear-gradient(rgba(0, 22, 41, 0.7), rgba(0, 22, 41, 0.3)),
+    url('https://images.unsplash.com/photo-1540339832862-4745a61253c3?q=80&w=2070&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center;
+}
+
+.luxury-card-shadow {
+  box-shadow: 0 12px 32px rgba(0, 43, 73, 0.08);
+}

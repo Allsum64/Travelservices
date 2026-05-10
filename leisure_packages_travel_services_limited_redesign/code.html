@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Leisure Packages | Travel Services Limited</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-dim": "#d9dadb",
+                    "outline-variant": "#c3c7ce",
+                    "inverse-primary": "#a8caef",
+                    "on-tertiary-fixed": "#241a00",
+                    "tertiary-fixed-dim": "#e9c349",
+                    "surface-container-highest": "#e1e3e4",
+                    "inverse-on-surface": "#f0f1f2",
+                    "background": "#f8f9fa",
+                    "on-secondary": "#ffffff",
+                    "surface-bright": "#f8f9fa",
+                    "on-secondary-fixed-variant": "#004e59",
+                    "surface-container-high": "#e7e8e9",
+                    "error-container": "#ffdad6",
+                    "on-tertiary-fixed-variant": "#574500",
+                    "on-secondary-container": "#006573",
+                    "inverse-surface": "#2e3132",
+                    "on-primary": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary": "#006876",
+                    "on-primary-fixed-variant": "#274969",
+                    "surface-tint": "#406182",
+                    "outline": "#73777e",
+                    "on-tertiary-container": "#4f3e00",
+                    "on-tertiary": "#ffffff",
+                    "surface-container-low": "#f3f4f5",
+                    "primary-fixed": "#cfe5ff",
+                    "surface-container": "#edeeef",
+                    "primary-container": "#002b49",
+                    "on-error": "#ffffff",
+                    "surface": "#f8f9fa",
+                    "tertiary": "#735c00",
+                    "primary-fixed-dim": "#a8caef",
+                    "secondary-container": "#5ee6fe",
+                    "tertiary-fixed": "#ffe088",
+                    "on-surface-variant": "#42474d",
+                    "on-surface": "#191c1d",
+                    "surface-variant": "#e1e3e4",
+                    "on-primary-fixed": "#001d34",
+                    "on-background": "#191c1d",
+                    "on-primary-container": "#7293b6",
+                    "on-secondary-fixed": "#001f25",
+                    "on-error-container": "#93000a",
+                    "tertiary-container": "#cca830",
+                    "primary": "#001629",
+                    "error": "#ba1a1a",
+                    "secondary-fixed": "#a0efff",
+                    "secondary-fixed-dim": "#4cd8ef"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-mobile": "20px",
+                    "container-max": "1280px",
+                    "margin-desktop": "64px",
+                    "unit": "8px",
+                    "gutter": "24px"
+            },
+            "fontFamily": {
+                    "headline-sm": ["Plus Jakarta Sans"],
+                    "headline-md": ["Plus Jakarta Sans"],
+                    "display-lg": ["Plus Jakarta Sans"],
+                    "label-sm": ["Inter"],
+                    "label-md": ["Inter"],
+                    "body-md": ["Inter"],
+                    "title-lg": ["Plus Jakarta Sans"],
+                    "body-lg": ["Inter"],
+                    "display-lg-mobile": ["Plus Jakarta Sans"]
+            },
+            "fontSize": {
+                    "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "title-lg": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "display-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hero-gradient {
+            background: linear-gradient(0deg, rgba(0, 22, 41, 0.7) 0%, rgba(0, 22, 41, 0) 100%);
+        }
+        .luxury-card-shadow {
+            box-shadow: 0 12px 32px rgba(0, 43, 73, 0.08);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md selection:bg-secondary-container">
+<!-- TopNavBar -->
+<header class="bg-white/80 dark:bg-primary/80 backdrop-blur-xl docked full-width top-0 sticky z-50 border-b border-outline-variant/30 shadow-sm">
+<nav class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="font-display-lg text-display-lg-mobile md:text-headline-sm font-bold text-primary dark:text-inverse-primary tracking-tight">
+                Travel Services Limited
+            </div>
+<div class="hidden md:flex items-center space-x-gutter">
+<a class="font-title-lg text-title-lg text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors" href="#">Corporate</a>
+<a class="font-title-lg text-title-lg text-secondary dark:text-secondary-fixed-dim border-b-2 border-secondary font-bold" href="#">Leisure</a>
+<a class="font-title-lg text-title-lg text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors" href="#">Logistics</a>
+<a class="font-title-lg text-title-lg text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors" href="#">About Us</a>
+<a class="font-title-lg text-title-lg text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors" href="#">Contact</a>
+</div>
+<button class="bg-tertiary-fixed text-on-tertiary-fixed font-title-lg px-8 py-3 rounded-xl hover:bg-tertiary-fixed-dim transition-all duration-300 scale-95 active:scale-90">
+                Book Now
+            </button>
+</nav>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative h-[819px] w-full overflow-hidden">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="A breathtaking aerial view of a pristine tropical island in Papua New Guinea, surrounded by vibrant turquoise coral reefs and deep ocean blue water. The morning light is soft and golden, illuminating the lush green canopy of the island. The overall mood is one of serene, untouched luxury, perfectly capturing the spirit of the last frontier." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-RmKJj2g4j3LoM2KIxknxv1e7C0Pbkg--1GnDZYxo1mhBpFkzHBQ7c6dPLcT-z9aOAiS5aYGd9gO45VzHboe9a55QADFWkL8mVei7s0Fn7GPfoypinlJiHGazJWO4osqqL532ZqAzc0ltUJxX8WgcfY08Hx_yjEaxWq0mWasruGYcYed8qWiPVwn-x2Q0b_SyhyoSatJtOJvpCA-NbeAsEtANN2rdP8Lc1w-U00SrlQFtXtNVkAD6YCXAOwI4ve9lHHKgX1UaLoY2"/>
+<div class="absolute inset-0 hero-gradient flex items-end pb-24 px-margin-mobile md:px-margin-desktop">
+<div class="max-w-container-max mx-auto w-full">
+<span class="inline-block px-4 py-1 bg-secondary-container/20 backdrop-blur-md border border-secondary-container/30 text-secondary-container rounded-full font-label-sm mb-6 uppercase tracking-widest">Premium Leisure</span>
+<h1 class="font-display-lg text-white max-w-3xl mb-6">Unforgettable Journeys Through the Last Frontier</h1>
+<p class="font-body-lg text-white/90 max-w-xl">From the emerald peaks of the Highlands to the hidden atolls of the Bismarck Sea, we curate bespoke experiences for the discerning traveler.</p>
+</div>
+</div>
+</section>
+<!-- Experience Categories (Bento Style) -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="mb-12">
+<h2 class="font-headline-md text-primary mb-4">Choose Your Rhythm</h2>
+<p class="font-body-md text-on-surface-variant max-w-2xl">Discover Papua New Guinea through our meticulously crafted travel pillars, each designed to offer a unique perspective on our extraordinary nation.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter h-auto md:h-[600px]">
+<div class="md:col-span-8 relative rounded-2xl overflow-hidden group luxury-card-shadow">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A luxury yacht anchored in a secluded, crystal-clear lagoon with white sandy beaches and overhanging palm trees in Papua New Guinea. The lighting is high-key and tropical, emphasizing the brilliant turquoise and cyan tones of the water. The aesthetic is clean, sophisticated, and evokes a high-end concierge travel service." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAX22V3vBQrU2xPYOrMdpXdi95GXcbWr5mYz5UeKkxFkzfpSWOT3DEQAEVP45Bhf9gUJTSczo_cWe9-rwjtbEpXnt0ZRc-I9E2Vn3TOo2J2emCE9g4iH7XzW1Dej5PQEHvighIuDAljRm9py2OXKVZAL6FCPZOpbosqwOVfe8COqPT8ZbnrYtr8IMmZAi6nIygfKwiNlz_HFeB3UYBSnKXL6XgHMdq0AwAzGhbyMyi6QGn4XQCKBbBGXo3iW0d3gkbOLvuqkH26-JXX"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent p-12 flex flex-col justify-end">
+<h3 class="font-headline-sm text-white mb-2">Coastal Luxury</h3>
+<p class="text-white/80 font-body-md max-w-md">Private yacht expeditions, world-class diving at Kimbe Bay, and exclusive island retreats for ultimate seclusion.</p>
+</div>
+</div>
+<div class="md:col-span-4 relative rounded-2xl overflow-hidden group luxury-card-shadow">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Intricate traditional masks and tribal art from the Sepik River region of Papua New Guinea displayed in a modern, well-lit gallery setting. The lighting highlights the organic textures and vibrant earthy pigments. The mood is respectful and educational, reflecting a premium cultural immersion experience." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhsKRpke9D-4LbC5h36DfVDIDg8biqOExhAC6WPSGpM24qP7EyaywpNH8kiTGYODTh5oyR2mfOxHZgj6GV-b41e4PaK5_8ukvau2O0Y3VLvqv1jOu2DXttlM64j4f0_zmmgcvcpJdGYrk5aXH74ZH8ZJNdDxg2LwYreys_5QvsbIDzt0CHWaM44y2ndyAJlxaukezpk7obq13E8_yeg9HpcTc6iLyNThZt8BKU8BXWGLTM2c4sgoWFYTHei4WVjLgtvf6AF6e3u-GA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent p-12 flex flex-col justify-end">
+<h3 class="font-headline-sm text-white mb-2">Cultural Immersion</h3>
+<p class="text-white/80 font-body-md">Connect with ancient traditions through the Goroka Show and village homestays in the Sepik River region.</p>
+</div>
+</div>
+<div class="md:col-span-12 relative rounded-2xl overflow-hidden group luxury-card-shadow min-h-[300px]">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A dense, mist-covered rainforest canopy in the Highlands of Papua New Guinea at dawn. The light is cool and atmospheric, with shafts of light piercing through the tropical foliage. The style is editorial and cinematic, highlighting the rugged adventure and natural beauty of the Kokoda Trail region." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAe_wDu7hI21oxQvEVGb3E-KqCxjArrsHXbpGDmcGWQ0_tqDZdN6VJr7-n7M23I3Yv-4d4CyPHyhni0fxfLXXk1q9pER2g12DgDVgsRCNO6Hx3JOhqU5aVXTjyn0xIccsL4a4W3vIEonfT53UypXhfRCpI91-kQKJujNYvkLYv2RP7FcL6KyrR7JA7QHsiC1JTAUcyVqtsCSU9p1wE0NZbptI65_gBTUDmha-9s18nJSOlWD2zRCN3DfSffHODToagEz3SQtCy0K9Vw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent p-12 flex flex-col justify-end">
+<h3 class="font-headline-sm text-white mb-2">Rugged Adventure</h3>
+<p class="text-white/80 font-body-md max-w-2xl">Conquer the legendary Kokoda Trail, witness rare Birds of Paradise, or trek the peaks of Mount Wilhelm with our expert local guides.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Travel With Us -->
+<section class="bg-surface-container py-24">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center">
+<h2 class="font-headline-md text-primary mb-16">The Premier Travel Experience</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="flex flex-col items-center">
+<div class="w-20 h-20 rounded-full bg-secondary-container/20 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-secondary text-4xl" data-icon="explore">explore</span>
+</div>
+<h4 class="font-title-lg mb-3">Local Expertise</h4>
+<p class="font-body-md text-on-surface-variant">Deep-rooted connections across the islands ensuring authentic and safe experiences.</p>
+</div>
+<div class="flex flex-col items-center">
+<div class="w-20 h-20 rounded-full bg-secondary-container/20 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-secondary text-4xl" data-icon="handshake">handshake</span>
+</div>
+<h4 class="font-title-lg mb-3">Bespoke Itineraries</h4>
+<p class="font-body-md text-on-surface-variant">We don't do 'off-the-shelf.' Every journey is tailored to your specific passions and pace.</p>
+</div>
+<div class="flex flex-col items-center">
+<div class="w-20 h-20 rounded-full bg-secondary-container/20 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-secondary text-4xl" data-icon="support_agent" data-weight="fill">support_agent</span>
+</div>
+<h4 class="font-title-lg mb-3">24/7 Concierge</h4>
+<p class="font-body-md text-on-surface-variant">From arrival to departure, our on-ground team is always a phone call away for seamless support.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Curated Packages -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="flex justify-between items-end mb-12">
+<div>
+<h2 class="font-headline-md text-primary mb-4">Curated Expeditions</h2>
+<p class="font-body-md text-on-surface-variant">Hand-picked journeys ready for your discovery.</p>
+</div>
+<button class="text-secondary font-title-lg flex items-center gap-2 group">
+                    View All Packages <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Card 1 -->
+<div class="bg-white rounded-2xl overflow-hidden luxury-card-shadow border border-outline-variant/20 hover:-translate-y-2 transition-all duration-300">
+<img class="w-full h-64 object-cover" data-alt="A traditional canoe navigating the lush, winding tributaries of the Sepik River in Papua New Guinea. The late afternoon sun creates a warm, golden glow across the water and the vibrant green jungle. The image has a rich, editorial feel, capturing a sense of discovery and profound cultural immersion." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7vFIuICGSgBCiRBjk-FRNaT5WIYWlo8TjMGSY8jXTqs1xoWqV7Cr5HGLhs0y0QCtShvjJbD0j6fKPmj5rKH_MbgoYsDOWmwPVfwhhpFu_dgmnXExMmwvd9kpy473t2YGC4Mlh0yQ6rbOovfccgO-JbNfrgpUI28lHaxGl_pDgE2QDQZa7-G_muu7U8upX_llik2vCKJ4FYvct4LSon6aSB6J2IKX6Xj4LddvrMexSHYamRNZA7IJo73RTSQW6K0Kn-HVzvi3JoyhC"/>
+<div class="p-8">
+<div class="flex justify-between items-start mb-4">
+<span class="px-3 py-1 bg-secondary-container/10 text-secondary rounded-full font-label-sm">Culture &amp; Nature</span>
+<span class="font-label-md text-on-surface-variant">10 Days</span>
+</div>
+<h3 class="font-title-lg text-primary mb-3">Sepik River Discovery</h3>
+<p class="font-body-md text-on-surface-variant mb-6 line-clamp-2">Journey into the heart of PNG's cultural center, exploring spirit houses and ancient traditions.</p>
+<div class="flex items-center justify-between pt-6 border-t border-outline-variant/20">
+<div>
+<p class="font-label-sm text-outline">From</p>
+<p class="font-title-lg text-secondary">$4,250 <span class="text-sm font-normal text-outline">/ pp</span></p>
+</div>
+<button class="bg-primary text-white px-6 py-2 rounded-xl font-label-md hover:bg-secondary transition-colors">View Itinerary</button>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-white rounded-2xl overflow-hidden luxury-card-shadow border border-outline-variant/20 hover:-translate-y-2 transition-all duration-300">
+<img class="w-full h-64 object-cover" data-alt="A group of trekkers silhouetted against a spectacular sunrise on a misty mountain ridge in Papua New Guinea. The sky is filled with hues of soft orange and deep blue, creating a dramatic and inspirational mood. The photography is high-contrast and professional, emphasizing the challenge and reward of rugged adventure trekking." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMMMSuJ6DB6sdA3GWaYK2hfUX_ywhzcYrlen6yuUjv72PZmjaiu9-9mf5dIA8yfTdzvtCgUgzVpaGsU72NZzpF9U92mVvLFb6DyLOSgprwxz1BaM22ZSJGNpDS4UtpK-dpeBtcLqMvr94LvMcuQlosP-H16eGZHJvJsv73AS5Pinxx7JgvEvJuaC6e4OoH0W_r7mbHAZRssfhj3CGNYd9bblNc_KD-UFJ83Lg_-awFQeVbwxy_KlnuwNGn_2U8drUR3YMuwQBHsUgO"/>
+<div class="p-8">
+<div class="flex justify-between items-start mb-4">
+<span class="px-3 py-1 bg-secondary-container/10 text-secondary rounded-full font-label-sm">Adventure</span>
+<span class="font-label-md text-on-surface-variant">8 Days</span>
+</div>
+<h3 class="font-title-lg text-primary mb-3">Kokoda Trail Trek</h3>
+<p class="font-body-md text-on-surface-variant mb-6 line-clamp-2">Walk in the footsteps of history through challenging terrain and rewarding mountain vistas.</p>
+<div class="flex items-center justify-between pt-6 border-t border-outline-variant/20">
+<div>
+<p class="font-label-sm text-outline">From</p>
+<p class="font-title-lg text-secondary">$3,800 <span class="text-sm font-normal text-outline">/ pp</span></p>
+</div>
+<button class="bg-primary text-white px-6 py-2 rounded-xl font-label-md hover:bg-secondary transition-colors">View Itinerary</button>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-white rounded-2xl overflow-hidden luxury-card-shadow border border-outline-variant/20 hover:-translate-y-2 transition-all duration-300">
+<img class="w-full h-64 object-cover" data-alt="Underwater photography showing vibrant, healthy coral gardens and schools of colorful tropical fish in the Bismarck Sea. The water is exceptionally clear, with sunlight filtering down in bright rays. The aesthetic is clean and high-definition, representing premium coastal luxury and world-class diving experiences." src="https://lh3.googleusercontent.com/aida-public/AB6AXuClyNXSzSFoAy5T9AmN1BW5f7o0Kx2hniIQW-bOfNa38IbotAJavCoNPLs9ZCcNqHc0S52zUS7v1n7QAouOjZqv2PAYKlY1mH3Qc-0y3atXJAIbMU5G6fQ9IdC-QEgiMSDS1nlMBvJD1LxpxnfQraEdXPDU2cI_PbNqNsbg9W55xuVvunee1LfCV1VaUSma1SzECxeNv3Ddf4JUhrfExWvMNubzwU_TXCf21OTeLBSF1vUW8M1lNdXs3qr9xqx8SYqluXbXTDTDxmCY"/>
+<div class="p-8">
+<div class="flex justify-between items-start mb-4">
+<span class="px-3 py-1 bg-secondary-container/10 text-secondary rounded-full font-label-sm">Marine Luxury</span>
+<span class="font-label-md text-on-surface-variant">12 Days</span>
+</div>
+<h3 class="font-title-lg text-primary mb-3">Bismarck Sea Expedition</h3>
+<p class="font-body-md text-on-surface-variant mb-6 line-clamp-2">A luxurious private cruise visiting remote atolls and the world's most bio-diverse reefs.</p>
+<div class="flex items-center justify-between pt-6 border-t border-outline-variant/20">
+<div>
+<p class="font-label-sm text-outline">From</p>
+<p class="font-title-lg text-secondary">$7,500 <span class="text-sm font-normal text-outline">/ pp</span></p>
+</div>
+<button class="bg-primary text-white px-6 py-2 rounded-xl font-label-md hover:bg-secondary transition-colors">View Itinerary</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Lead Generation Form -->
+<section class="py-24 bg-primary text-white">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+<div>
+<h2 class="font-headline-md mb-6">Plan Your Escape</h2>
+<p class="font-body-lg text-white/70 mb-8">Ready to explore the last frontier? Our travel designers are here to craft your perfect journey. Tell us what you envision, and we'll handle the rest.</p>
+<div class="space-y-6">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-tertiary-fixed" data-icon="check_circle">check_circle</span>
+<p class="font-body-md">Personalized route mapping</p>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-tertiary-fixed" data-icon="check_circle">check_circle</span>
+<p class="font-body-md">VIP logistics and ground handling</p>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-tertiary-fixed" data-icon="check_circle">check_circle</span>
+<p class="font-body-md">Exclusive access to off-map locations</p>
+</div>
+</div>
+</div>
+<div class="bg-white rounded-3xl p-10 text-primary luxury-card-shadow">
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="font-label-md text-outline">Full Name</label>
+<input class="w-full border-b border-outline-variant py-3 focus:border-secondary focus:ring-0 outline-none transition-colors" placeholder="John Doe" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-label-md text-outline">Email Address</label>
+<input class="w-full border-b border-outline-variant py-3 focus:border-secondary focus:ring-0 outline-none transition-colors" placeholder="john@example.com" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="font-label-md text-outline">Primary Interest</label>
+<select class="w-full border-b border-outline-variant py-3 focus:border-secondary focus:ring-0 outline-none transition-colors appearance-none bg-transparent">
+<option>Coastal Luxury &amp; Diving</option>
+<option>Cultural Immersion</option>
+<option>Rugged Adventure &amp; Trekking</option>
+<option>Bespoke Mix</option>
+</select>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="font-label-md text-outline">Expected Travel Dates</label>
+<input class="w-full border-b border-outline-variant py-3 focus:border-secondary focus:ring-0 outline-none transition-colors" type="date"/>
+</div>
+<div class="space-y-2">
+<label class="font-label-md text-outline">Number of Travelers</label>
+<input class="w-full border-b border-outline-variant py-3 focus:border-secondary focus:ring-0 outline-none transition-colors" placeholder="2" type="number"/>
+</div>
+</div>
+<button class="w-full bg-secondary text-white py-5 rounded-xl font-title-lg hover:bg-secondary-fixed-dim transition-all duration-300 mt-4" type="submit">
+                                Inquiry for My Bespoke Journey
+                            </button>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-16 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-4 gap-gutter bg-primary dark:bg-surface-container-lowest text-on-primary dark:text-on-background font-body-md text-body-md">
+<div class="md:col-span-1">
+<div class="font-headline-sm text-headline-sm font-bold text-tertiary-fixed mb-6">Travel Services Limited</div>
+<p class="text-surface-variant/80 mb-6">Your premier travel partner in Papua New Guinea since 2003.</p>
+<div class="flex space-x-4">
+<span class="material-symbols-outlined cursor-pointer hover:text-tertiary-fixed" data-icon="facebook">social_leaderboard</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-tertiary-fixed" data-icon="instagram">retweet</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-tertiary-fixed" data-icon="linkedin">link</span>
+</div>
+</div>
+<div>
+<h5 class="text-tertiary-fixed font-bold mb-6">Quick Links</h5>
+<ul class="space-y-4">
+<li><a class="text-surface-variant/80 hover:text-white transition-colors" href="#">Corporate Travel</a></li>
+<li><a class="text-tertiary-fixed font-bold underline" href="#">Leisure Packages</a></li>
+<li><a class="text-surface-variant/80 hover:text-white transition-colors" href="#">Logistics Solutions</a></li>
+<li><a class="text-surface-variant/80 hover:text-white transition-colors" href="#">Group Charters</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-tertiary-fixed font-bold mb-6">Support</h5>
+<ul class="space-y-4">
+<li><a class="text-surface-variant/80 hover:text-white transition-colors" href="#">Emergency Support</a></li>
+<li><a class="text-surface-variant/80 hover:text-white transition-colors" href="#">Terms of Service</a></li>
+<li><a class="text-surface-variant/80 hover:text-white transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="text-surface-variant/80 hover:text-white transition-colors" href="#">Sitemap</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-tertiary-fixed font-bold mb-6">Contact</h5>
+<p class="text-surface-variant/80 mb-2">Level 1, SVS Foodland, Harbour City</p>
+<p class="text-surface-variant/80 mb-2">P.O. Box 3220, Boroko, NCD, PNG</p>
+<p class="text-surface-variant/80 mb-2">+675 3095400</p>
+<p class="text-surface-variant/80">info@travelservices.com.pg</p>
+</div>
+<div class="md:col-span-4 border-t border-surface-variant/20 pt-12 text-center text-surface-variant/60">
+            © 2024 Travel Services Limited. Papua New Guinea's Premier Travel Partner.
+        </div>
+</footer>
+</body></html>

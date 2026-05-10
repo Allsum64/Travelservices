@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-highest": "#e1e3e4",
+                        "outline-variant": "#c3c7ce",
+                        "surface-tint": "#406182",
+                        "on-primary-fixed": "#001d34",
+                        "on-secondary-container": "#006573",
+                        "primary-container": "#002b49",
+                        "on-primary-fixed-variant": "#274969",
+                        "inverse-surface": "#2e3132",
+                        "on-error-container": "#93000a",
+                        "error-container": "#ffdad6",
+                        "tertiary": "#735c00",
+                        "on-tertiary": "#ffffff",
+                        "secondary-fixed-dim": "#4cd8ef",
+                        "secondary-container": "#5ee6fe",
+                        "on-surface-variant": "#42474d",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed": "#a0efff",
+                        "surface": "#f8f9fa",
+                        "on-primary": "#ffffff",
+                        "surface-dim": "#d9dadb",
+                        "tertiary-fixed": "#ffe088",
+                        "outline": "#73777e",
+                        "secondary": "#006876",
+                        "on-tertiary-container": "#4f3e00",
+                        "on-surface": "#191c1d",
+                        "on-secondary-fixed-variant": "#004e59",
+                        "on-primary-container": "#7293b6",
+                        "surface-container-low": "#f3f4f5",
+                        "primary-fixed": "#cfe5ff",
+                        "primary": "#001629",
+                        "surface-bright": "#f8f9fa",
+                        "on-error": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-fixed-dim": "#a8caef",
+                        "tertiary-fixed-dim": "#e9c349",
+                        "on-tertiary-fixed-variant": "#574500",
+                        "inverse-on-surface": "#f0f1f2",
+                        "tertiary-container": "#cca830",
+                        "surface-container-high": "#e7e8e9",
+                        "surface-variant": "#e1e3e4",
+                        "surface-container": "#edeeef",
+                        "error": "#ba1a1a",
+                        "inverse-primary": "#a8caef",
+                        "on-background": "#191c1d",
+                        "on-tertiary-fixed": "#241a00",
+                        "on-secondary-fixed": "#001f25",
+                        "background": "#f8f9fa"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "8px",
+                        "xl": "12px",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "margin-mobile": "20px",
+                        "unit": "8px",
+                        "margin-desktop": "64px",
+                        "container-max": "1280px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Inter"],
+                        "headline-sm": ["Plus Jakarta Sans"],
+                        "title-lg": ["Plus Jakarta Sans"],
+                        "display-lg": ["Plus Jakarta Sans"],
+                        "body-lg": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "label-md": ["Inter"],
+                        "headline-md": ["Plus Jakarta Sans"],
+                        "display-lg-mobile": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "title-lg": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                        "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500"}],
+                        "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                        "display-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body-md text-on-surface">
+<!-- TopNavBar -->
+<nav class="bg-white/80 dark:bg-primary/80 backdrop-blur-xl docked full-width top-0 sticky z-50 border-b border-outline-variant/30 shadow-sm">
+<div class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="font-display-lg text-display-lg-mobile md:text-headline-sm font-bold text-primary dark:text-inverse-primary tracking-tight">
+                Travel Services Limited
+            </div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors font-title-lg text-title-lg" href="#">Corporate</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors font-title-lg text-title-lg" href="#">Leisure</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors font-title-lg text-title-lg" href="#">Logistics</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors font-title-lg text-title-lg" href="#">About Us</a>
+<a class="text-secondary dark:text-secondary-fixed-dim border-b-2 border-secondary font-bold font-title-lg text-title-lg" href="#">Contact</a>
+</div>
+<button class="bg-tertiary-container text-on-tertiary-container px-6 py-2 rounded-lg font-bold hover:bg-tertiary transition-all duration-300 scale-95 active:scale-90">
+                Book Now
+            </button>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative h-[614px] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="A luxurious aerial view of the turquoise waters and lush green islands of Papua New Guinea under a bright tropical sun. The scene captures the essence of premium travel with clear, high-key lighting and a sense of vast, serene beauty. The color palette is dominated by deep ocean blues and vibrant cyan water tones, reflecting a professional yet aspirational travel brand aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZAtPauh8_jX0GQdRI6FxxJkbNiWa1433zvmSC3psGfUfq8AQYt7rcoLYaZVLvNAuCaK4Dqz3DQEMxqd3hyl-ip4MSH9Z9HVEsy7pgRDccPSbe4bBrlwFRrbr3-ngFHin9mk1bni6UAhqBG7u_mJi3vNK49cgAmVHd9djLsoN66wIG7cAdWstvV2BtUIj5ZvCS_6OSYiiarEdmhcA3WxVwnQ_zve7uSR9FLbKQR0Z0vhQISoSrJTO5I0cN1rFEe-0ABb3g0V-rh4VT"/>
+<div class="absolute inset-0 bg-primary/40 backdrop-blur-[2px]"></div>
+</div>
+<div class="relative z-10 text-center px-margin-mobile">
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-white mb-6">
+                    Connect with PNG’s Premier<br/>Travel Experts
+                </h1>
+<p class="font-body-lg text-white/90 max-w-2xl mx-auto">
+                    Experience unparalleled service and local expertise for your next journey, whether it's a critical corporate mission or a bespoke escape into paradise.
+                </p>
+</div>
+</section>
+<!-- Route Inquiry Cards (Bento Style) -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop -mt-24 relative z-20 pb-20">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Corporate Travel -->
+<div class="bg-white p-10 rounded-lg shadow-xl border border-outline-variant/20 group hover:border-secondary transition-all duration-500">
+<div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-6 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[32px]">business_center</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-4">Corporate Travel Solutions</h3>
+<p class="font-body-md text-on-surface-variant mb-8">
+                        Streamlined logistics, emergency support, and policy management for organizations requiring precision and reliability in the Pacific region.
+                    </p>
+<button class="flex items-center gap-2 text-secondary font-bold hover:gap-4 transition-all">
+                        Inquire for Business <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+<!-- Leisure Escapes -->
+<div class="bg-white p-10 rounded-lg shadow-xl border border-outline-variant/20 group hover:border-secondary transition-all duration-500">
+<div class="w-14 h-14 bg-secondary/10 rounded-lg flex items-center justify-center mb-6 text-secondary group-hover:bg-secondary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[32px]">beach_access</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-4">Bespoke Leisure Escapes</h3>
+<p class="font-body-md text-on-surface-variant mb-8">
+                        Tailor-made itineraries focusing on luxury, culture, and adventure. From private island retreats to cultural expeditions.
+                    </p>
+<button class="flex items-center gap-2 text-secondary font-bold hover:gap-4 transition-all">
+                        Plan My Escape <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Main Contact Form & Info -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 lg:grid-cols-12 gap-16 pb-32">
+<!-- Left: Contact Info -->
+<div class="lg:col-span-5 space-y-12">
+<div>
+<h2 class="font-headline-md text-headline-md text-primary mb-8">Our Locations</h2>
+<div class="space-y-8">
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 bg-surface-container flex items-center justify-center rounded-lg text-primary">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<div>
+<h4 class="font-title-lg text-title-lg text-primary mb-1">Headquarters</h4>
+<p class="font-body-md text-on-surface-variant">SVS Foodland, Harbour City<br/>Port Moresby, Papua New Guinea</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 bg-surface-container flex items-center justify-center rounded-lg text-primary">
+<span class="material-symbols-outlined">call</span>
+</div>
+<div>
+<h4 class="font-title-lg text-title-lg text-primary mb-1">Phone</h4>
+<p class="font-body-md text-on-surface-variant">+675 3095400</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 bg-surface-container flex items-center justify-center rounded-lg text-primary">
+<span class="material-symbols-outlined">mail</span>
+</div>
+<div>
+<h4 class="font-title-lg text-title-lg text-primary mb-1">Email</h4>
+<p class="font-body-md text-on-surface-variant">info@travelservices.com.pg</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Map Integration (Placeholder) -->
+<div class="rounded-lg overflow-hidden h-64 shadow-md grayscale hover:grayscale-0 transition-all duration-700">
+<img class="w-full h-full object-cover" data-alt="A clean, minimalist map representation of Port Moresby, Papua New Guinea, highlighting the Harbour City district. The map uses a professional aesthetic with subtle blues and grays, following the tropical luxury theme of the brand. It provides a geographical context for the Travel Services Limited headquarters in a modern, sophisticated style." data-location="Port Moresby" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdAVQA6QhqqbnJ8WZVYlYmkDDW_EGgr234ycBxFAYfgCi6GjGL8YDRC-h7kObSx-srre-KNry7ugbuXIoe2xYLj0l_FHWN0BpQNIEjpx30jeP7fMLq1of21FoEBc7jtKVvQ_lCYTcQdtW8Qx-NcaYydSqPGtxeecZgmhZxlnoeXBcDC8PqKNhXK3G6gv_UxOPD11msai8ilbKMMhIblqMbrQ3itwWi6pSELbCMFsCHtcDY6IWJeToK6btLi_IkStu3Ju236p3zaAQE"/>
+</div>
+</div>
+<!-- Right: Contact Form -->
+<div class="lg:col-span-7 bg-white p-8 md:p-12 rounded-xl shadow-2xl border border-outline-variant/10">
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="font-label-md text-label-md text-on-surface-variant">Full Name</label>
+<input class="w-full px-4 py-3 rounded-lg border border-outline-variant focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition-all" placeholder="John Doe" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-label-md text-label-md text-on-surface-variant">Company (Optional)</label>
+<input class="w-full px-4 py-3 rounded-lg border border-outline-variant focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition-all" placeholder="Acme Corp" type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="font-label-md text-label-md text-on-surface-variant">Email Address</label>
+<input class="w-full px-4 py-3 rounded-lg border border-outline-variant focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition-all" placeholder="john@example.com" type="email"/>
+</div>
+<div class="space-y-2">
+<label class="font-label-md text-label-md text-on-surface-variant">Phone Number</label>
+<input class="w-full px-4 py-3 rounded-lg border border-outline-variant focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition-all" placeholder="+675..." type="tel"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="font-label-md text-label-md text-on-surface-variant">Service Interest</label>
+<select class="w-full px-4 py-3 rounded-lg border border-outline-variant focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition-all appearance-none bg-white">
+<option>Select a service</option>
+<option>Corporate Travel Solutions</option>
+<option>Bespoke Leisure Escapes</option>
+<option>Logistics &amp; Support</option>
+<option>Other Inquiry</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="font-label-md text-label-md text-on-surface-variant">Your Message</label>
+<textarea class="w-full px-4 py-3 rounded-lg border border-outline-variant focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition-all" placeholder="How can we assist you?" rows="4"></textarea>
+</div>
+<button class="w-full bg-primary text-white py-4 rounded-lg font-bold hover:bg-primary-container transition-all shadow-lg active:scale-[0.98]" type="submit">
+                        Send Inquiry
+                    </button>
+</form>
+</div>
+</section>
+<!-- Global Reach Section -->
+<section class="bg-primary py-24 text-white overflow-hidden relative">
+<div class="absolute right-0 top-0 w-1/3 h-full opacity-10 pointer-events-none">
+<span class="material-symbols-outlined text-[400px]">public</span>
+</div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="text-center mb-16">
+<h2 class="font-headline-md text-headline-md mb-4">Global Reach, Local Presence</h2>
+<p class="font-body-lg text-white/70 max-w-xl mx-auto">Leveraging world-class partnerships to provide seamless travel experiences anywhere on the globe.</p>
+</div>
+<div class="flex flex-wrap justify-center items-center gap-16 md:gap-32">
+<div class="flex flex-col items-center gap-4 group">
+<div class="h-16 flex items-center grayscale invert opacity-70 group-hover:opacity-100 transition-opacity">
+<img class="h-12 object-contain" data-alt="A stylized, professional representation of the Amadeus logo, synonymous with global travel technology. The visual emphasizes digital connectivity and innovation within the travel industry, set against a clean, corporate background that reflects the high standards of Travel Services Limited. The mood is sophisticated and reliable." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQq2HhIdz4X3-pSAUp5Dcr_JNI475otcwLm_a2koBG9xt_c9GAQq7WAY4w_SAL3teIUz2kEfV410o3xb4XBQJJJW4u7wVdEWJM_Dyo4zB5cJGjLnhixvYC1noM6Lm3b_di4YWJ8hijl7LYqJAVSafeJ9xJQQCAOShLeNOV-7O2AR0ftuWAdJ5Vt-G1Jf5n-znLFQHL6a1Q-63ctIYCZUWau1StdGCZjWThrDi0wtt5Yi5Ol_P2xxvISQrTc0RPJmfl9-oA2R4HoyPk"/>
+</div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-fixed">Strategic Partner</span>
+</div>
+<div class="flex flex-col items-center gap-4 group">
+<div class="h-16 flex items-center grayscale invert opacity-70 group-hover:opacity-100 transition-opacity">
+<img class="h-12 object-contain" data-alt="A high-quality visual concept representing the Lufthansa City Center partnership. It captures the essence of global aviation and premium service, using professional branding elements that suggest speed, safety, and international connectivity. The style is airy and modern, aligned with corporate luxury travel aesthetics." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVipmZy6-c7oapCf45rWo4AhIXicpVfWTKHS3y3Znxaj9ECcax15ZHGEezfQQ2DGU6vD9MoiTEhtxE9xKDUWzbZtruxHSYQkKaNA-He6iRp_OsiufGgguuINGdyQgFJcUWS6Gr_8bSE4pONMUrlz0wq6FcJlBtHf6wE-DL-VtaVWd4jMBEzQyx_1OI6JNOzUTo-VAOoMbCfOJDCwtgj5oSZVeefTREezODG8zpjObz2itmMIqRZpEQkcgTR73uH9nUCSntDlHaHZON"/>
+</div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-fixed">Network Partner</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-16 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-4 gap-gutter bg-primary dark:bg-surface-container-lowest text-on-primary dark:text-on-background">
+<div class="md:col-span-1">
+<div class="font-headline-sm text-headline-sm font-bold text-tertiary-fixed mb-6">TSL</div>
+<p class="font-body-md text-surface-variant/80 mb-6">
+                © 2024 Travel Services Limited. Papua New Guinea's Premier Travel Partner.
+            </p>
+</div>
+<div class="space-y-4">
+<h4 class="font-title-lg text-title-lg text-white mb-6">Services</h4>
+<a class="block text-surface-variant/80 dark:text-on-surface-variant hover:text-white transition-colors font-body-md" href="#">Corporate Travel</a>
+<a class="block text-surface-variant/80 dark:text-on-surface-variant hover:text-white transition-colors font-body-md" href="#">Luxury Holidays</a>
+<a class="block text-surface-variant/80 dark:text-on-surface-variant hover:text-white transition-colors font-body-md" href="#">Logistics</a>
+</div>
+<div class="space-y-4">
+<h4 class="font-title-lg text-title-lg text-white mb-6">Support</h4>
+<a class="block text-surface-variant/80 dark:text-on-surface-variant hover:text-white transition-colors font-body-md" href="#">Emergency Support</a>
+<a class="block text-surface-variant/80 dark:text-on-surface-variant hover:text-white transition-colors font-body-md" href="#">Sitemap</a>
+<a class="block text-surface-variant/80 dark:text-on-surface-variant hover:text-white transition-colors font-body-md" href="#">Careers</a>
+</div>
+<div class="space-y-4">
+<h4 class="font-title-lg text-title-lg text-white mb-6">Legal</h4>
+<a class="block text-surface-variant/80 dark:text-on-surface-variant hover:text-white transition-colors font-body-md" href="#">Privacy Policy</a>
+<a class="block text-surface-variant/80 dark:text-on-surface-variant hover:text-white transition-colors font-body-md" href="#">Terms of Service</a>
+</div>
+</footer>
+</body></html>
