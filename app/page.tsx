@@ -284,6 +284,91 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ── Curated Expeditions ── */}
+      <section className="py-24 px-margin-mobile md:px-margin-desktop bg-surface-container-low">
+        <div className="max-w-container-max mx-auto">
+          <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+            <div>
+              <h2 className="font-headline-md text-headline-md text-primary mb-4">Curated Expeditions</h2>
+              <p className="font-body-md text-on-surface-variant">Hand-picked journeys ready for your discovery.</p>
+            </div>
+            <Link
+              href="/leisure"
+              className="text-secondary font-title-lg flex items-center gap-2 group shrink-0"
+            >
+              View All Packages{' '}
+              <span className="material-symbols-outlined group-hover:translate-x-1 transition-transform">
+                arrow_forward
+              </span>
+            </Link>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+            {[
+              {
+                src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuB7vFIuICGSgBCiRBjk-FRNaT5WIYWlo8TjMGSY8jXTqs1xoWqV7Cr5HGLhs0y0QCtShvjJbD0j6fKPmj5rKH_MbgoYsDOWmwPVfwhhpFu_dgmnXExMmwvd9kpy473t2YGC4Mlh0yQ6rbOovfccgO-JbNfrgpUI28lHaxGl_pDgE2QDQZa7-G_muu7U8upX_llik2vCKJ4FYvct4LSon6aSB6J2IKX6Xj4LddvrMexSHYamRNZA7IJo73RTSQW6K0Kn-HVzvi3JoyhC',
+                alt: 'Traditional canoe navigating lush winding tributaries of the Sepik River',
+                tag: 'Culture & Nature',
+                duration: '10 Days',
+                title: 'Sepik River Discovery',
+                desc: "Journey into the heart of PNG's cultural center, exploring spirit houses and ancient traditions.",
+                price: '$4,250',
+              },
+              {
+                src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCMMMSuJ6DB6sdA3GWaYK2hfUX_ywhzcYrlen6yuUjv72PZmjaiu9-9mf5dIA8yfTdzvtCgUgzVpaGsU72NZzpF9U92mVvLFb6DyLOSgprwxz1BaM22ZSJGNpDS4UtpK-dpeBtcLqMvr94LvMcuQlosP-H16eGZHJvJsv73AS5Pinxx7JgvEvJuaC6e4OoH0W_r7mbHAZRssfhj3CGNYd9bblNc_KD-UFJ83Lg_-awFQeVbwxy_KlnuwNGn_2U8drUR3YMuwQBHsUgO',
+                alt: 'Group of trekkers silhouetted against spectacular sunrise on misty mountain ridge',
+                tag: 'Adventure',
+                duration: '8 Days',
+                title: 'Kokoda Trail Trek',
+                desc: 'Walk in the footsteps of history through challenging terrain and rewarding mountain vistas.',
+                price: '$3,800',
+              },
+              {
+                src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuClyNXSzSFoAy5T9AmN1BW5f7o0Kx2hniIQW-bOfNa38IbotAJavCoNPLs9ZCcNqHc0S52zUS7v1n7QAouOjZqv2PAYKlY1mH3Qc-0y3atXJAIbMU5G6fQ9IdC-QEgiMSDS1nlMBvJD1LxpxnfQraEdXPDU2cI_PbNqNsbg9W55xuVvunee1LfCV1VaUSma1SzECxeNv3Ddf4JUhrfExWvMNubzwU_TXCf21OTeLBSF1vUW8M1lNdXs3qr9xqx8SYqluXbXTDTDxmCY',
+                alt: 'Vibrant healthy coral gardens and tropical fish in the Bismarck Sea',
+                tag: 'Marine Luxury',
+                duration: '12 Days',
+                title: 'Bismarck Sea Expedition',
+                desc: "A luxurious private cruise visiting remote atolls and the world's most bio-diverse reefs.",
+                price: '$7,500',
+              },
+            ].map((pkg) => (
+              <div
+                key={pkg.title}
+                className="bg-white rounded-2xl overflow-hidden luxury-card-shadow border border-outline-variant/20 hover:-translate-y-2 transition-all duration-300"
+              >
+                <img className="w-full h-64 object-cover" src={pkg.src} alt={pkg.alt} />
+                <div className="p-8">
+                  <div className="flex justify-between items-start mb-4">
+                    <span className="px-3 py-1 bg-secondary-container/10 text-secondary rounded-full font-label-sm">
+                      {pkg.tag}
+                    </span>
+                    <span className="font-label-md text-on-surface-variant">{pkg.duration}</span>
+                  </div>
+                  <h3 className="font-title-lg text-primary mb-3">{pkg.title}</h3>
+                  <p className="font-body-md text-on-surface-variant mb-6 line-clamp-2">{pkg.desc}</p>
+                  <div className="flex items-center justify-between pt-6 border-t border-outline-variant/20">
+                    <div>
+                      <p className="font-label-sm text-outline">From</p>
+                      <p className="font-title-lg text-secondary">
+                        {pkg.price}{' '}
+                        <span className="text-sm font-normal text-outline">/ pp</span>
+                      </p>
+                    </div>
+                    <Link
+                      href="/leisure"
+                      className="bg-primary text-white px-6 py-2 rounded-xl font-label-md hover:bg-secondary transition-colors"
+                    >
+                      View Itinerary
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ── Final CTA / Contact ── */}
       <section className="py-24 px-margin-mobile md:px-margin-desktop bg-primary text-white relative overflow-hidden">
         <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 w-[600px] h-[600px] bg-secondary/10 rounded-full blur-3xl" />
