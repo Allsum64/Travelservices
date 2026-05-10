@@ -43,62 +43,10 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* Quick Search Overlay */}
-        <div className="absolute bottom-0 left-0 right-0 translate-y-1/2 z-20 px-margin-mobile md:px-margin-desktop">
-          <div className="max-w-5xl mx-auto bg-white rounded-2xl shadow-2xl p-6 md:p-8 border border-outline-variant/20">
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-              <div className="flex flex-col gap-2">
-                <label className="font-label-sm text-label-sm text-on-surface-variant uppercase">Where to?</label>
-                <div className="relative">
-                  <span className="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline">
-                    location_on
-                  </span>
-                  <input
-                    type="text"
-                    placeholder="Destination"
-                    className="w-full pl-10 pr-4 py-3 rounded-lg bg-surface-container border-none focus:ring-2 focus:ring-secondary text-on-surface"
-                  />
-                </div>
-              </div>
-              <div className="flex flex-col gap-2">
-                <label className="font-label-sm text-label-sm text-on-surface-variant uppercase">Travelers</label>
-                <div className="relative">
-                  <span className="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline">
-                    group
-                  </span>
-                  <select className="w-full pl-10 pr-4 py-3 rounded-lg bg-surface-container border-none focus:ring-2 focus:ring-secondary text-on-surface appearance-none">
-                    <option>1 Adult</option>
-                    <option>2 Adults</option>
-                    <option>Group (5+)</option>
-                  </select>
-                </div>
-              </div>
-              <div className="flex flex-col gap-2">
-                <label className="font-label-sm text-label-sm text-on-surface-variant uppercase">Service Type</label>
-                <div className="relative">
-                  <span className="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline">
-                    flight
-                  </span>
-                  <select className="w-full pl-10 pr-4 py-3 rounded-lg bg-surface-container border-none focus:ring-2 focus:ring-secondary text-on-surface appearance-none">
-                    <option>Flights + Hotels</option>
-                    <option>Corporate Logistics</option>
-                    <option>Leisure Charter</option>
-                  </select>
-                </div>
-              </div>
-              <div className="flex items-end">
-                <button className="w-full bg-primary text-white h-[52px] rounded-lg font-bold flex items-center justify-center gap-2 hover:bg-primary-container transition-all shadow-md">
-                  <span className="material-symbols-outlined">search</span>
-                  Search
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
       </section>
 
       {/* ── About Section ── */}
-      <section className="pt-48 pb-20 px-margin-mobile md:px-margin-desktop bg-surface-bright">
+      <section className="py-24 px-margin-mobile md:px-margin-desktop bg-surface-bright">
         <div className="max-w-container-max mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
