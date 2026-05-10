@@ -4,7 +4,7 @@ export default function HomePage() {
   return (
     <main>
       {/* ── Hero Section ── */}
-      <section className="relative h-[870px] min-h-[600px] flex items-center overflow-hidden">
+      <section className="relative min-h-[calc(100vh-80px)] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
             className="w-full h-full object-cover"
@@ -14,7 +14,7 @@ export default function HomePage() {
           <div className="absolute inset-0 bg-gradient-to-r from-primary/60 to-transparent" />
         </div>
 
-        <div className="relative z-10 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop w-full text-white">
+        <div className="relative z-10 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop w-full text-white py-16 md:py-24">
           <div className="max-w-2xl">
             <h1 className="font-display-lg text-display-lg-mobile md:text-display-lg mb-6 leading-tight">
               Your Premier Gateway to Papua New Guinea and Beyond

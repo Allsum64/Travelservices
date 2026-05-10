@@ -11,7 +11,7 @@ export default function AboutPage() {
   return (
     <main>
       {/* ── Hero Section ── */}
-      <section className="relative h-[819px] flex items-center overflow-hidden">
+      <section className="relative min-h-[calc(100vh-80px)] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
             className="w-full h-full object-cover"
@@ -20,7 +20,7 @@ export default function AboutPage() {
           />
           <div className="absolute inset-0 bg-gradient-to-r from-primary/80 via-primary/40 to-transparent" />
         </div>
-        <div className="relative z-10 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full">
+        <div className="relative z-10 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full py-16 md:py-24">
           <div className="max-w-2xl text-white">
             <span className="inline-block px-4 py-1 rounded-full bg-secondary-container/20 border border-secondary-container/30 text-secondary-fixed font-label-sm mb-6">
               SINCE 2003

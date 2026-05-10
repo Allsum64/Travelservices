@@ -61,7 +61,7 @@ export default function CorporatePage() {
   return (
     <main>
       {/* ── Hero Section ── */}
-      <section className="relative h-[819px] flex items-center overflow-hidden">
+      <section className="relative min-h-[calc(100vh-80px)] flex items-center overflow-hidden">
         <div className="absolute inset-0 hero-corporate-bg" />
         <div className="relative z-10 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full">
           <div className="max-w-2xl text-white">

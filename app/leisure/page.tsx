@@ -41,7 +41,7 @@ export default function LeisurePage() {
   return (
     <main>
       {/* ── Hero Section ── */}
-      <section className="relative h-[819px] w-full overflow-hidden">
+      <section className="relative min-h-[calc(100vh-80px)] w-full overflow-hidden">
         <img
           className="absolute inset-0 w-full h-full object-cover"
           src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-RmKJj2g4j3LoM2KIxknxv1e7C0Pbkg--1GnDZYxo1mhBpFkzHBQ7c6dPLcT-z9aOAiS5aYGd9gO45VzHboe9a55QADFWkL8mVei7s0Fn7GPfoypinlJiHGazJWO4osqqL532ZqAzc0ltUJxX8WgcfY08Hx_yjEaxWq0mWasruGYcYed8qWiPVwn-x2Q0b_SyhyoSatJtOJvpCA-NbeAsEtANN2rdP8Lc1w-U00SrlQFtXtNVkAD6YCXAOwI4ve9lHHKgX1UaLoY2"

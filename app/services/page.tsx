@@ -54,7 +54,7 @@ export default function ServicesPage() {
   return (
     <main>
       {/* ── Hero Section ── */}
-      <section className="relative min-h-[716px] flex items-center overflow-hidden">
+      <section className="relative min-h-[calc(100vh-80px)] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
             className="w-full h-full object-cover"
